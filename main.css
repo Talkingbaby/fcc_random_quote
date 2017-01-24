@@ -1,0 +1,48 @@
+body {
+    /* The image used */
+    background-image: url("https://images.pexels.com/photos/65117/pexels-photo-65117.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+    /* Full height */
+    height: 100vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.center {
+    position: absolute;
+    top: 30%;
+}
+
+div blockquote {
+    border: unset;
+    border-radius: 5px 0 0 5px;
+    background: linear-gradient(to right, #EC407A, #FCE4EC, transparent);
+    opacity: 0.8;
+}
+
+p.quote,
+.author {
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px black;
+}
+
+.author {
+    font-size: 1.2em;
+}
+
+button.btn {
+    background-color: #F06292;
+    color: white;
+}
+button.go-right {
+    float: right;
+}
+button.btn:hover {
+    color: white;
+}
+i.fa-twitter {
+    color: white;
+}
