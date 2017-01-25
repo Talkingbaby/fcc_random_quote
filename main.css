@@ -10,8 +10,7 @@ body {
 }
 
 div.center {
-    position: absolute;
-    top: 30%;
+    padding-top: 30vh;
 }
 
 div blockquote {

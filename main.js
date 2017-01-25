@@ -13,14 +13,15 @@ $('.quote-search').click(function() {
         },
         success: function(response) {
             var resp = JSON.parse(response);
-            console.log('success: ', resp);
             currentQuote = resp.quote;
             currentAuthor = resp.author;
             $(".quote").text(currentQuote);
             $(".author").text(currentAuthor);
+            $('.tweet-quote').attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&text=' + encodeURIComponent('"' + currentQuote + '" ' + currentAuthor));
         },
         error: function(response) {
-            console.log('error: ', response);
+            $(".quote").text("I'm sorry there seems to be a problem. Please try again.");
+            $(".author").text("The Internet Fairy");
         }
     })
 });
