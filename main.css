@@ -1,47 +1,60 @@
 body {
     /* The image used */
-    background-image: url("https://images.pexels.com/photos/65117/pexels-photo-65117.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+    background-image: url("https://static.pexels.com/photos/377911/pexels-photo-377911.jpeg");
     /* Full height */
     height: 100vh;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    font-family: 'Playfair Display', serif;
 }
 
-div.center {
-    padding-top: 30vh;
+.container,
+.container .row {
+    height: 100%;
 }
 
 div blockquote {
-    border: unset;
-    border-radius: 5px 0 0 5px;
-    background: linear-gradient(to right, #EC407A, #FCE4EC, transparent);
-    opacity: 0.8;
+    background-color: #40C4FF;
+    margin-top: -15rem;
+    padding: 1rem;
 }
 
 p.quote,
 .author {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     letter-spacing: 1px;
-    text-shadow: 1px 1px black;
 }
 
 .author {
-    font-size: 1.2em;
+    font-size: 1rem;
 }
 
 button.btn {
-    background-color: #F06292;
+    background-color: #00B0FF;
     color: white;
+    border-radius: unset;
+    cursor: pointer;
 }
-button.go-right {
-    float: right;
-}
-button.btn:hover {
-    color: white;
+a.twitter-btn {
+    background-color: transparent;
+    border: 1px solid #00B0FF;
+    border-radius: unset;
 }
 i.fa-twitter {
+    color: #00B0FF;
+}
+button.btn:hover {
+    color: #00B0FF;
+    background-color: transparent;
+    border: 1px solid #00B0FF;
+}
+.twitter-btn:hover {
+    background-color: #00B0FF;
+}
+.twitter-btn:hover i.fa-twitter {
     color: white;
 }

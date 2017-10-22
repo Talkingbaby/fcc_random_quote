@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Random Quotes</title>
     <link href="main.css" type="text/css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
+
 <body>
-<div class="center">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                <blockquote class="col-sm-12">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-3 d-flex flex-column justify-content-center">
+                <blockquote>
                     <p class="quote">Inspiration comes and goes with the click of a button.</p>
                     <footer class="author">Kyle Kenney</footer>
                 </blockquote>
-                <button class="btn quote-search">New Quote</button>
-                <button class="btn go-right"><a class="twitter-share-button tweet-quote"
-                                                href="https://twitter.com/intent/tweet" target="_blank">
-                    <i class="fa fa-twitter"></i></a></button>
+                <div class="d-inline-flex justify-content-between">
+                        <button class="btn quote-search">New Quote</button>
+                            <a class="btn pull-right twitter-btn twitter-share-button tweet-quote" href="https://twitter.com/intent/tweet" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<script
-        src="https://code.jquery.com/jquery-3.1.1.min.js"
-        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>

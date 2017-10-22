@@ -12,9 +12,8 @@ $('.quote-search').click(function() {
             "Content-Type": "application/x-www-form-urlencoded"
         },
         success: function(response) {
-            var resp = JSON.parse(response);
-            currentQuote = resp.quote;
-            currentAuthor = resp.author;
+            currentQuote = response.quote;
+            currentAuthor = response.author;
             $(".quote").text(currentQuote);
             $(".author").text(currentAuthor);
             $('.tweet-quote').attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&text=' + encodeURIComponent('"' + currentQuote + '" ' + currentAuthor));
